@@ -19,20 +19,26 @@
   </head>
   <body>
     <?php echo "<h1>Displaying a Range of Even Numbers</h1>"; ?>
-    <?php
-      echo "<h3>Welcome!</h3>";
-      echo "<p>Welcome! Input a minimum and maximum number below, and we will display all the even numbers ranging between the minimum and maximum you specify.</p>";
-    ?>
-    <?php echo "<h3>Your Input:</h3>"; ?>
-    <!-- Form for user input -->
-    <form action="./numbers.php" method="post" target="results">
-      <label for="min number">Enter a minimum number:</label>
-      <input type="number" step="1" name="min-number" placeholder="Minimum"><br><br>
-      <label for="max number">Enter a maximum number:</label>
-      <input type="number" step="1" name="max-number" placeholder="Maximum"><br><br>
-      <input type="submit" value="Submit Numbers" id="styled-button">
-    </form>
-    <!-- Iframe to display results -->
-    <iframe id="results" name="results"></iframe>
+    <!-- Div for background colour -->
+    <div id="blue">
+      <?php
+        echo "<h3>Welcome!</h3>";
+        echo "<p>Welcome! Input a minimum and maximum number below, and we will display all the even numbers ranging between the minimum and maximum you specify.</p>";
+      ?>
+      <?php echo "<h3>Your Input:</h3>"; ?>
+      <!-- Form for user input -->
+      <form action="./numbers.php" method="post" target="results">
+        <label for="min number">Enter a minimum number:</label>
+        <input type="number" step="1" name="min-number" placeholder="Minimum"><br><br>
+        <label for="max number">Enter a maximum number:</label>
+        <input type="number" step="1" name="max-number" placeholder="Maximum"><br><br>
+        <input type="submit" value="Submit Numbers" id="submit-button">
+      </form>
+    </div>
+    <!-- Div for yellow background colour -->
+    <div id="yellow">
+      <!-- Iframe to display results -->
+      <iframe id="results" name="results"></iframe>
+    </div>
   </body>
 </html>

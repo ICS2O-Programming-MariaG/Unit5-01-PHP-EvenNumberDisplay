@@ -9,3 +9,33 @@ body {
   margin: 5% 10%;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+h1 {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background-color: #fd564f;
+}
+
+#blue {
+  padding: 20px 50px;
+  background-color: #c7ebfc;
+  margin-top: 30px;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+#yellow {
+  padding: 20px 50px;
+  background-color: #f9fdb6;
+  margin-top: 30px;
+}
+
+#submit-button {
+  padding: 10px;
+  border: none;
+  background-color: #94ccfe;
+}
